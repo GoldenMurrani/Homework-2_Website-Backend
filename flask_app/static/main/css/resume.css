@@ -1,0 +1,60 @@
+/* CSS Styling Document for the Resume */
+
+/* Styling for the institution */
+.institution {
+    color: #FFFFFF;
+	font-size: 28px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/* Styling for the institution date */
+.institution_location {
+    color: #000000;
+	font-size: 12px;
+    text-shadow: 2px 2px 2px #555555;
+    text-align: right;
+}
+
+/* Styling for the position*/
+.position {
+	color: #FFFFFF;
+	font-size: 20px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/* Styling for the position date */
+.position_date {
+	color: #000000;
+	font-size: 12px;
+    text-shadow: 2px 2px 2px #555555;
+    text-align: right;
+}
+
+/* Styling for the experience*/
+.experience {
+	color: #FFFFFF;
+	font-size: 16px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/* Styling for the experience date */
+.experience_date {
+	color: #000000;
+	font-size: 10px;
+    text-shadow: 2px 2px 2px #555555;
+    text-align: right;
+}
+
+/* Styling for the skill*/
+.skill {
+	color: #FFFFFF;
+	font-size: 14px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/* Styling for the skill level*/
+.skill_level {
+	color: #FFFFFF;
+	font-size: 12px;
+    text-shadow: 2px 2px 2px #000000;
+}

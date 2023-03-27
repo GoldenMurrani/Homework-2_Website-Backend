@@ -1,0 +1,398 @@
+/* CSS Styling Document for the Piano Page */
+
+/* Main piano grid wrapper */
+.piano-back {
+	display: grid;
+	grid-template-columns: repeat(30, 1fr);
+	grid-template-rows: 25% 25% 25% 25%;
+	width: clamp(50vw, 800px, 1000px);
+	height: clamp(750px, 50vh, 800px);
+	justify-content: center;
+	margin: 5vh auto 5vh auto;
+	z-index: 0;
+	background-color: #34394D;
+	border: 5px solid #34394D;
+	border-radius: 100px 100px 0px 0px;
+	padding: 0vh 2vw 1vh 2vw;
+	opacity: 1;
+	transition: opacity 5s;
+}
+
+/* Monster image grid wrapper */
+.great-old-one {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100%;
+	width: clamp(50vw, 82vw, 1000px);
+	height: clamp(750px, 52vh, 800px);
+	justify-content: center;
+	margin: 5vh auto 5vh auto;
+	border-radius: 100px 100px 0px 0px;
+	padding: 0%;
+	z-index: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 5s;
+	position: relative;
+}
+
+/* Div box inside of monster wrapper */
+.monster-box {
+	margin: 0%;
+	padding: 0%;
+	justify-content: center;
+	z-index: 0;
+	position: relative;
+}
+
+/* Monster image styling and fitting */
+.monster-image {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	padding: 0%;
+	margin: 0%;
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+}
+
+/* Title for the monster image */
+.monster-title {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0%;
+	padding: 0%;
+	font-style: italic;
+	font-size: clamp(8px, 24px, 36px);
+	font-family: Aclonica;
+	text-shadow: 5px 5px 5px #000000;
+	z-index: 2;
+	position: absolute;
+	top: 25%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+/* Title for the piano grid */
+.piano-title {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 10%;
+	font-style: italic;
+	font-size: clamp(8px, 24px, 36px);
+	font-family: Aclonica;
+	text-shadow: 5px 5px 5px #000000;
+	grid-row: 1/3;
+	grid-column: 1/31;
+}
+
+/* Styling for the letters on the white keys (black letters) */
+.piano-text-black {
+	color: #000000;
+	text-align: center;
+	vertical-align: bottom;
+	font-size: clamp(8px, 24px, 32px);
+	font-family: Aclonica;
+	text-shadow: 1px 1px 1px #000000;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	transform: translate(25px, 20px);
+	opacity: 0;
+	transition: 1s;
+}
+
+/* Styling for the letters on the black keys (white letters) */
+.piano-text-white {
+	color: #FFFFFF;
+	text-align: center;
+	vertical-align: bottom;
+	font-size: clamp(8px, 24px, 32px);
+	font-family: Aclonica;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	z-index: 2;
+	position: absolute;
+	bottom: 0;
+	transform: translate(15px, 25px);
+	opacity: 0;
+	transition: 1s;
+}
+
+/*
+	These are the styling ids for the white piano keys
+*/
+#piano-white1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 1/4;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+#piano-white2 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 4/7;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+#piano-white3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 7/10;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+#piano-white4 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 10/13;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+#piano-white5 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 13/16;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+#piano-white6 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 16/19;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+#piano-white7 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 19/22;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+#piano-white8 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 22/25;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+#piano-white9 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 25/28;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+#piano-white10 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/5;
+	grid-column: 28/31;
+	background-color: #DFDFDF;
+	border: 5px solid #000000;
+	border-radius: 20px;
+	z-index: 1;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+/*
+	These are the styling ids for the black piano keys
+*/
+#piano-black1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/4;
+	grid-column: 3/5;
+	background-color: #000000;
+	border: 5px solid #000000;
+	border-radius: 15px;
+	z-index: 2;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+#piano-black2 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/4;
+	grid-column: 6/8;
+	background-color: #000000;
+	border: 5px solid #000000;
+	border-radius: 15px;
+	z-index: 2;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+#piano-black3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/4;
+	grid-column: 12/14;
+	background-color: #000000;
+	border: 5px solid #000000;
+	border-radius: 15px;
+	z-index: 2;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+#piano-black4 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/4;
+	grid-column: 15/17;
+	background-color: #000000;
+	border: 5px solid #000000;
+	border-radius: 15px;
+	z-index: 2;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+#piano-black5 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/4;
+	grid-column: 18/20;
+	background-color: #000000;
+	border: 5px solid #000000;
+	border-radius: 15px;
+	z-index: 2;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+#piano-black6 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/4;
+	grid-column: 24/26;
+	background-color: #000000;
+	border: 5px solid #000000;
+	border-radius: 15px;
+	z-index: 2;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+#piano-black7 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 25vh;
+	grid-row: 3/4;
+	grid-column: 27/29;
+	background-color: #000000;
+	border: 5px solid #000000;
+	border-radius: 15px;
+	z-index: 2;
+	margin: 0;
+	position: relative;
+	transform: none;
+	box-shadow: 3px 3px 3px #000000;
+}

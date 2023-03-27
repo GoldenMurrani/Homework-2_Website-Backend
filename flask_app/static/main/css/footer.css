@@ -1,0 +1,23 @@
+/* CSS Styling Document for the Footer */
+
+/* Styling for the footer wrapper */
+.footer-box {
+	padding: 0%;
+	border: 0%;
+	margin: 0%;
+	position: static;
+	bottom: 0%;
+	background-color: #323232;
+	width: 100vw;
+	height: 5vh;
+	min-height: 30px;
+}
+
+/* Styling for the footer text (COPYRIGHT) */
+.copyright {
+	padding: 5px;
+	color: #FF0000;
+	font-size: 24px;
+	text-align: center;
+	margin: 0%;
+}

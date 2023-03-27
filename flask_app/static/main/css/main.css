@@ -1,0 +1,140 @@
+/* CSS Styling Document for the Main section of the Body */
+
+/* Basic padding and color styles for the background */
+.body {
+	background-color: #767676;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	min-height: calc(100vh - 10vh - 7vh - 5vh);
+}
+
+/* Creates a grid for the main sectio to hold information */
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50vh;
+	grid-gap: 10px;
+	width: 80vw;
+	justify-content: center;
+	margin: 10vw;
+}
+
+/* Controls grid shape and style when screen is below 650px */
+@media screen and (max-width: 650px){
+	.main-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 80vw;
+		justify-content: center;
+	}
+	
+	.main-box1 {
+		width: 80vw;
+		max-height: none;
+		object-fit: cover;
+		background-size: cover;
+	}
+	
+	.box1-image {
+		max-height: none;
+		max-width: 80vw;
+		float: left;
+	}
+
+}
+
+/* Styling for Left Grid Box (Image) */
+.main-box1 {
+	margin: 0%;
+	padding: 0%;
+	justify-content: center;
+	border: 5px solid #000000;
+}
+
+/* Styling for the image that goes in Left Grid Box */
+.box1-image {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/* Styling for Right Grid Box (Text) */
+.main-box2 {
+	text-align: center;
+	text-justify: inter-word;
+	padding: 2vw;
+	overflow : auto;
+	margin: 0%;
+}
+
+/*
+	Styling for all the different texts in the section
+*/
+#text {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0%;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#bigtext {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0%;
+	font-size: 36px;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#just-text {
+	color: #FFFFFF;
+	text-align: justify;
+	text-justify: interword;
+	margin: 0%;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#big-just-text {
+	color: #FFFFFF;
+	text-align: justify;
+	text-justify: interword;
+	margin: 0%;
+	font-size: 36px;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+#text-i {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0%;
+	text-shadow: 2px 2px 2px #000000;
+	font-style: italic;
+	font-size: 18px;
+}
+
+#bigtitle {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0%;
+	font-size: 36px;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+/* Styles the linebreak */
+#linebreaker {
+	width: 75vw;
+	height: .1vh;
+	background-color: #FF0000;
+	border: none;
+}
+
+/* Affects the links in the main section */
+.main-link:link, .main-link:visited {
+	color: #ECECEC;
+}
+
+.main-link:hover, .main-link:active {
+	color: #ECECEC;
+	text-decoration: none;
+}

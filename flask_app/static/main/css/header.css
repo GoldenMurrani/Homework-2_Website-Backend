@@ -1,0 +1,17 @@
+/* CSS Styling Document for the header/banner */
+
+/* Padding, border and margins for the header */
+header {
+	padding: 0%;
+	border: 0%;
+	margin: 0%;
+}
+
+/* Box inside header wrapper styling */
+.header-box {
+	width: 100vw;
+	height: 10vh;
+	background-image: url('/../static/main/images/red-banner.jpg/');
+	background-size: cover;
+	color: #000000;
+}

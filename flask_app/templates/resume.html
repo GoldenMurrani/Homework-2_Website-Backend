@@ -1,0 +1,41 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+
+      <br>
+      <h1 id="bigtitle">Resume</h1>
+
+      <!-- For each institution - generate a row --> 
+      {% for inst_id, inst in resume_data.items() %}
+      <!-- Do something... -->
+      <p class="institution">{{ inst['name']}} <b class="institution_location">{{ inst['city']}},{{ inst['state']}}</b></p>
+
+        {% if inst['positions'] != {} %}
+          {% for pos_id, pos in inst['positions'].items() %}
+          <!-- Do something else... -->
+          <p class="position">{{ pos['title']}} <b class="position_date">{{pos['start_date']}} - {{pos['end_date']}}</b></p>
+          <p>{{pos['responsibilities']}}</p>
+
+            {% if pos['experiences'] != {} %}
+              {% for exp_id, exp in pos['experiences'].items() %}
+              <p class="experience">{{ exp['name'] }}: {{ exp['description'] }} <b class="experience_date">{{ exp['start_date'] }} - {{ exp['end_date'] }}</b></p>
+              <p>{{ exp['hyperlink'] }}</p>
+
+                {% if exp['skills'] != {} %}
+                  {% for skill_id, skill in exp['skills'].items() %}
+                    <p class="skill">Skill: {{ skill['name'] }}, <b class="skill_level">Level: {{ skill['skill_level'] }}</b></p>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+      <hr id="linebreaker">
+      {% endfor %}
+
+
+
+{% endblock %}
+
+

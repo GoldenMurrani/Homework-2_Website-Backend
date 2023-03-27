@@ -1,0 +1,86 @@
+<!-- FILL ME IN WITH CODE FOR YOUR PAGE LAYOUT -->
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yousif Murrani</title>
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/footer.css') }}">
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/header.css') }}">
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/main.css') }}">
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/navbar.css') }}">
+    <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/resume.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='main/images/favicon.ico') }}">
+    <link rel="stylesheet"    href="{{ url_for('static', filename='piano/css/piano.css') }}">
+    {% block extracss %}{% endblock %}
+    <script src="{{ url_for('static', filename='main/js/main.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='piano/js/piano.js') }}" defer></script>
+    {% block extrajs %}{% endblock %}
+  </head>
+
+  <body class="body">
+      
+      <!-- The header  -->
+      <header>
+        <div class="header-box"></div>
+      </header>
+
+      <!-- The navigation bar -->
+      <nav class="nav-bar">
+        <div class="nav-grid">
+          <div class="nav-box1">CSE 477 - Homework 2</div>
+          <div class="nav-box2">
+            <a class="nav-link" href="https://homework-k2mnsdlocq-uc.a.run.app/home" title="Home Page">
+              Home
+            </a></div>
+          <div class="nav-box3">
+            <a class="nav-link" href="https://homework-k2mnsdlocq-uc.a.run.app/projects" title="Projects Page">
+              Projects
+            </a></div>
+          <div class="nav-box3">
+            <a class="nav-link" href="https://homework-k2mnsdlocq-uc.a.run.app/resume" title="Resume Link">
+              Resume
+            </a></div>
+          <div class="nav-box4">
+            <a class="nav-link" href="https://www.linkedin.com/in/yousif-murrani/" target="_blank" title="LinkedIn Page">
+              <img class="linkedin" src="/../static/main/images/social-linkedin.png" alt="LinkedIn Logo">
+            </a>
+          </div>
+          <div class="nav-box5">
+            <img class="menu" src="/../static/main/images/menu-bar.png" alt="Menu">
+            <div class="dropdown">
+              <ul>
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Resume</li>
+                <li>LinkedIn</li>
+              </ul>
+            </div>
+          
+          </div>
+        </div>
+      </nav>
+
+      <!-- The main content  -->
+      <main class="body">
+        {% block maincontent %}{% endblock %}
+      </main>
+
+      <!-- The footer of the file -->
+      <footer class="footer-box">
+        <p class="copyright">©Yousif Murrani</p>
+      </footer>
+
+      
+    
+  </body>
+
+</html>
+
+
+
+
+
+
+
+

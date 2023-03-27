@@ -1,0 +1,4 @@
+"inst_id","type","name","department","address","city","state","zip"
+"1","Academia","Michigan State University","Computer Science",NULL,"East Lansing","Michigan","48823"
+"2","Restaurant","Olgas Kitchen",NULL,"354 Frandor Ave","Lansing","Michigan","48912"
+"3","Industry","DoorDash","Delivery",NULL,"Shelby Township","Michigan","48317"
